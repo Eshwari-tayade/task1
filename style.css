@@ -69,7 +69,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	background-image: radial-gradient(cornsilk,salmon);;
-	color: black;
+	color: rgb(17, 17, 63);
 	padding: 16px;
 	border-radius: 15px;
 	margin-bottom: 15px;
