@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: radial-gradient(cornflowerblue,blueviolet);
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+h1{
+	font-size: 60px;
+	font-weight: 2px;
+	color: black;
+	padding: 30px 20px 50px 20px;
+	text-align: center;
+	font-family:  sans-serif;
+}
+.line{
+    width: 160px;
+    height: 5px;
+    background: rgb(17, 17, 63);
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 0 0 555px;
+ }
+#input {
+    padding: 10px;
+	background-color: black;
+	border-radius: 10px;
+	margin: 0 20px 0 0;
+	color:white;
+	font-size: 25px ;
+	font-family: 'PT Serif', serif;;
+	align-items: center;
+}
+#submit{
+    padding: 10px;
+    font-size: small;
+    font-weight: 8px;
+    background:rgb(17, 17, 63);
+    border-radius: 35px;
+    color: aliceblue;
+    transition: 2s;
+}
+#submit:hover{
+    transform: scale(1.1);
+    color: orangered;
+}
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 30px;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 20px;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: whitesmoke;
+	padding: 16px;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: black;
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) 
+{
+	color: var(--grey);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	margin: 0 0.5rem;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	transform:scale(1.1) ;
+}
+
+.task .actions button:active {
+	transform: scale(0.9);
+}
+
+.task .actions .edit {
+	background:rgb(17, 17, 63);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	color: orangered;
+}
